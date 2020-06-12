@@ -260,11 +260,9 @@ function removeArtist(arr, index) {
     arr.splice(arr[index], 1)
     console.log(arr.length)
   }
-  
+
   removeArtist(artists, 0);
   console.log(artists)
-
-
 
 
 /* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
@@ -282,12 +280,10 @@ At the end, this function should console.log() the new array with information ad
 function addArtist(arr, id, name, years, genre, nationality, bio){
   arr.push({id, name, years, genre, nationality, bio});
   return arr;
- 
 }
 
 addArtist(artists, artists.length, 'Dee Downs', '1994 - Present', 'Web Design', 'American', 'lorem ipsum' )
 console.log(artists)
-
 
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
@@ -309,6 +305,7 @@ function lotsOfArt(arr){
 }
 
 console.log(lotsOfArt(artists))
+
 
 // 🎨🎨 STRETCH 🎨🎨//
 
