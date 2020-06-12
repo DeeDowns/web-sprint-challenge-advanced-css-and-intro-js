@@ -263,8 +263,8 @@ function removeArtist(arr, index) {
     console.log(arr.length)
   }
   
-  // removeArtist(artists, 0);
-  // console.log(artists)
+  removeArtist(artists, 0);
+  console.log(artists)
 
 
 
@@ -305,7 +305,7 @@ function lotsOfArt(arr){
   let moreThanHundred = [];
   for(let counter = 0; counter < arr.length; counter++){
     if(arr[counter].paintings > 100) {
-      moreThanHundred.push(arr[counter]);
+      moreThanHundred.push(arr[counter].name);
     }
   }
   return moreThanHundred;
