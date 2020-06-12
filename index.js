@@ -233,20 +233,18 @@ function getArtistByIndex(array, index) {
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who lived in the 20th century (1900-2000) */
 
-function get20s(arr, str1, str2,){
+function get20s(arr, str){
   let twentiesArr = []
   Math.floor(arr.years)
   for(let counter = 0; counter < arr.length; counter++){
-    if(arr[counter].years.split(' ')[0].includes(str1) && arr[counter].years.split(' ')[2].includes(str2) || arr[counter].years.split(' ')[0].includes(str2)){
-      twentiesArr.push(arr[counter]) 
+    if(arr[counter].years.split(' ')[2].includes(str)) {
+      twentiesArr.push(arr[counter].name) 
     }
   }
   return twentiesArr;
 }
 
-console.log(get20s(artists, '18', '19'))
-
-
+console.log(get20s(artists, '19'))
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
@@ -289,7 +287,6 @@ function addArtist(arr, id, name, years, genre, nationality, bio){
 
 addArtist(artists, artists.length, 'Dee Downs', '1994 - Present', 'Web Design', 'American', 'lorem ipsum' )
 console.log(artists)
-
 
 
 
