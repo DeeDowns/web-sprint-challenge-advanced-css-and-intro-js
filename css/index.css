@@ -152,6 +152,11 @@ button:hover{
         width: 100%;
     }
 
+    .title-container h1 {
+        font-size: 4.5rem;
+        line-height: 5rem;
+    }
+
     /* Artist Section */
     .artists-container {
         display: flex;
