@@ -234,10 +234,9 @@ function getArtistByIndex(array, index) {
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who lived in the 20th century (1900-2000) */
 
 function get20s(arr, str){
-  let twentiesArr = []
-  Math.floor(arr.years)
+  let twentiesArr = [];
   for(let counter = 0; counter < arr.length; counter++){
-    if(arr[counter].years.split(' ')[2].includes(str)) {
+    if(arr[counter].years.includes(str)) {
       twentiesArr.push(arr[counter].name) 
     }
   }
